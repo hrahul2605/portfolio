@@ -1,6 +1,15 @@
-import React from "react";
-import "./App.css";
+import React from 'react';
+import { Navbar, Profile, TechStack, Experience } from './Interface';
+
+import './App.css';
 
 export const App: React.FC = () => {
-  return <div>portfolio</div>;
+  return (
+    <React.Fragment>
+      <Navbar />
+      <Profile />
+      <TechStack />
+      <Experience />
+    </React.Fragment>
+  );
 };
