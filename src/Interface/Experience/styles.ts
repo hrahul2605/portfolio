@@ -4,7 +4,6 @@ import { Bold, Regular } from '../../Shared/typography';
 import { LightBlue, BorderColor } from '../../Shared/colors';
 
 export const Container = styled(flexibleRowDiv)({
-  padding: '0 12.5%',
   marginTop: '128px',
 });
 

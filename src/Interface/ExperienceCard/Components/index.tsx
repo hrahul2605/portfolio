@@ -20,6 +20,7 @@ export const ExperienceCard: React.FC<Props> = ({
         </S.IntervalContainer>
         <S.Title>{post}</S.Title>
       </S.LeftSection>
+      <S.Separator />
       <S.RightSection>
         {description.map((desc, index) => (
           <S.Description key={index}>{desc}</S.Description>

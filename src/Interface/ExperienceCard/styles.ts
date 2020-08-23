@@ -2,7 +2,7 @@ import styled from '@emotion/styled';
 import { flexibleRowDiv, flexibleColDiv } from '../../Shared/styles';
 import { SemiBold, ExtraBold, Regular } from '../../Shared/typography';
 import { LightBlue } from '../../Shared/colors';
-import { ActivityIcon } from '../../Shared/Assets/ActivityIcon';
+import { ActivityIcon } from '../../Shared/Assets/Icons/ActivityIcon';
 
 export const Container = styled(flexibleRowDiv)({
   justifyContent: 'space-between',
@@ -11,37 +11,34 @@ export const Container = styled(flexibleRowDiv)({
 
 export const LeftSection = styled(flexibleColDiv)({
   flex: 2,
-  backgroundColor: 'transparent',
+});
+
+export const Separator = styled(flexibleColDiv)({
+  flex: 1,
 });
 
 export const RightSection = styled(flexibleColDiv)({
   flex: 3,
-  backgroundColor: 'transparent',
 });
 
 export const IntervalContainer = styled(flexibleRowDiv)({
   alignItems: 'center',
   marginBottom: '20px',
-  backgroundColor: 'transparent',
 });
 
 export const IntervalHeading = styled.p({
   fontWeight: SemiBold,
   fontSize: '0.875rem',
-  backgroundColor: 'transparent',
 });
 
 export const Title = styled.p({
   fontWeight: ExtraBold,
   fontSize: '1.125rem',
-  width: '180px',
-  backgroundColor: 'transparent',
 });
 
 export const Description = styled.p({
   fontWeight: Regular,
   fontSize: '1rem',
-  backgroundColor: 'transparent',
 });
 
 export const Icon = styled(ActivityIcon)({

@@ -2,23 +2,14 @@ import { WorkProps } from './types';
 
 export const Works: WorkProps[] = [
   {
-    start: 'PRESENT',
-    post: 'Fronted Developer',
-    description: ['Open Source Contribution at Ignitus Organization'],
+    start: 'September 10, 2020',
+    end: 'Present',
+    post: 'Software Intern at Satisfic Pte. Ltd.',
+    description: ['~ Working ~'],
   },
   {
-    start: 'May, 2020',
-    end: 'June, 2020',
-    post: 'Software Engineering Intern',
-    description: ['Lorem ipsum'],
-  },
-  {
-    post: 'Web Designer & Front End',
-    start: 'PRESENT',
-    description: [
-      'Lorem ipsum dolor sit amet, adipiscing elit',
-      'sed do eiusmod tempor incididunt ut',
-      'labore et dolore magna aliqua.',
-    ],
+    start: '',
+    post: 'Frontend Dev. at Ignitus',
+    description: ['Open Source Contribution', 'ReactJS'],
   },
 ];

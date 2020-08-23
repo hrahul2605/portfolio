@@ -7,17 +7,22 @@ export const Profile: React.FC = () => {
       <S.Section>
         <S.LeftSection>
           <S.Heading>
-            Hello, I'm Rahul!
-            <br />a Full stack developer
+            Heyy, I'm Rahul!
+            <br />
+            <S.SubHeading>
+              a<S.Position>Full stack developer</S.Position>
+            </S.SubHeading>
           </S.Heading>
-          <S.SubHeading>
+          <S.Description>
             Always interested in learning and experimenting with new
             <br />
             technologies. Looking for oppurtunities to grow as a<br />
             developer and improve my skills.
-          </S.SubHeading>
+          </S.Description>
         </S.LeftSection>
-        <S.RightSection />
+        <S.RightSection>
+          <S.Photo src={require('../../../Shared/Assets/profile.jpg')} />
+        </S.RightSection>
       </S.Section>
     </S.Container>
   );
