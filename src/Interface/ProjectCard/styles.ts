@@ -10,26 +10,25 @@ export const Container = styled(flexibleColDiv)`
   border-radius: 24px;
   margin: 0 24px 24px 0;
   overflow: hidden;
-  box-shadow: 0px 1px 5px #000000;
+  box-shadow: 2px 2px 2px #000000;
   position: relative;
 `;
 
-export const Image = styled.img`
+export const Image = styled.img<{ hover: boolean }>`
   object-fit: cover;
+  transform: ${(props) => (props.hover ? 'scale(1.1)' : '0')};
+  transition: transform 300ms ease-in;
 `;
 
-export const Details = styled(flexibleColDiv)`
+export const Details = styled(flexibleColDiv)<{ hover: boolean }>`
   position: absolute;
   height: 100%;
   width: 100%;
   justify-content: center;
   align-items: center;
   background-color: rgba(0, 0, 0, 0.6);
-  opacity: 0;
+  opacity: ${(props) => (props.hover ? 1 : 0)};
   transition: opacity 200ms ease-in;
-  &:hover {
-    opacity: 1;
-  }
 `;
 
 export const Title = styled.p({

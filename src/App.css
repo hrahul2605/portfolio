@@ -4,6 +4,7 @@ html,
   font-family: 'Montserrat', sans-serif;
   margin: 0;
   color: #ffffff;
+  scroll-behavior: smooth;
 }
 html {
   background-color: #232323;
@@ -21,4 +22,13 @@ html {
 
 a {
   text-decoration: none;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }

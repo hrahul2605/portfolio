@@ -14,11 +14,12 @@ export const LeftSection = styled(flexibleColDiv)({
 });
 
 export const Separator = styled(flexibleColDiv)({
-  flex: 1,
+  width: '48px',
 });
 
 export const RightSection = styled(flexibleColDiv)({
   flex: 3,
+  marginRight: '48px',
 });
 
 export const IntervalContainer = styled(flexibleRowDiv)({
