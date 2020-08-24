@@ -1,8 +1,10 @@
 import styled from '@emotion/styled';
+import { keyframes } from '@emotion/core';
 import { flexibleRowDiv, flexibleColDiv } from '../../Shared/styles';
 import { Bold, Regular } from '../../Shared/typography';
 import { LightBlue } from '../../Shared/colors';
 import { TopBlob } from '../../Shared/Assets/TopBlob';
+import { DownArrowIcon } from '../../Shared/Assets/Icons/DownArrowIcon';
 
 export const Container = styled(flexibleColDiv)({
   height: '100vh',
@@ -60,3 +62,37 @@ export const Blob = styled(TopBlob)`
   fill: rgba(242, 244, 248, 0.01);
   transform: rotate(90deg);
 `;
+
+const bounce = keyframes`
+  from, 20%, 53%, 80%, to {
+    transform: translate3d(0,0,0);
+  }
+  40%, 43% {
+    transform: translate3d(0, -20px, 0);
+  }
+  70% {
+    transform: translate3d(0, -15px, 0);
+  }
+`;
+
+export const DownArrow = styled.a<{ visible: boolean }>`
+  position: absolute;
+  height: 24px;
+  width: 24px;
+  bottom: 0;
+  margin: 48px;
+  align-self: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: ${(props) => (props.visible ? 1 : 0)};
+  animation: ${bounce} 2s ease-in-out infinite;
+  &:hover {
+    cursor: pointer;
+  }
+`;
+
+export const Arrow = styled(DownArrowIcon)({
+  height: 24,
+  width: 24,
+});

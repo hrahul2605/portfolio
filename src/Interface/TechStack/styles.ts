@@ -3,7 +3,7 @@ import { flexibleColDiv, flexibleRowDiv } from '../../Shared/styles';
 import { Medium, Bold } from '../../Shared/typography';
 
 export const Container = styled(flexibleColDiv)({
-  padding: '0 12.5%',
+  padding: '24px 12.5%',
   alignItems: 'center',
 });
 
