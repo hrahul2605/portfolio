@@ -20,18 +20,12 @@ export const LeftSection = styled(flexibleColDiv)({
   justifyContent: 'center',
 });
 
-export const Heading = styled.div({
+export const Heading = styled.span({
   fontWeight: Bold,
   fontSize: '3rem',
 });
 
-export const SubHeading = styled.div({
-  fontWeight: Bold,
-  fontSize: '3rem',
-  display: 'flex',
-});
-
-export const Position = styled.div({
+export const Position = styled.span({
   color: LightBlue,
   fontWeight: Bold,
   fontSize: '3rem',

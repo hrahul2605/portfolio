@@ -8,10 +8,7 @@ export const Profile: React.FC = () => {
         <S.LeftSection>
           <S.Heading>
             Heyy, I'm Rahul!
-            <br />
-            <S.SubHeading>
-              a<S.Position>Full stack developer</S.Position>
-            </S.SubHeading>
+            <br />a<S.Position>Full stack developer</S.Position>
           </S.Heading>
           <S.Description>
             Always interested in learning and experimenting with new

@@ -13,7 +13,7 @@ export const LeftSection = styled(flexibleColDiv)({
 });
 
 export const Separator = styled(flexibleColDiv)({
-  flex: 3,
+  width: '50px',
 });
 
 export const RightSection = styled(flexibleColDiv)({

@@ -13,7 +13,10 @@ export const Projects: React.FC = () => {
       <S.Separator />
       <S.RightSection>
         {ProjectData.map((project, index) => (
-          <ProjectCard {...project} key={index} />
+          <div style={{ display: 'flex', flexDirection: 'row' }}>
+            <ProjectCard {...project} key={index} />
+            <S.Random />
+          </div>
         ))}
       </S.RightSection>
     </S.Container>
