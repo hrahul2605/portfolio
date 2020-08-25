@@ -13,6 +13,7 @@ export const Heading = styled.p({
   fontSize: '3rem',
   fontWeight: Bold,
   textAlign: 'center',
+  padding: '0px 48px',
 });
 
 export const Email = styled.p({
@@ -24,7 +25,7 @@ export const Email = styled.p({
 
 export const Contact = styled(flexibleRowDiv)({
   width: '74px',
-  marginTop: '48px',
+  marginTop: '24px',
   justifyContent: 'space-between',
 });
 

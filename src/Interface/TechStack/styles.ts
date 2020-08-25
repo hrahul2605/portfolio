@@ -18,12 +18,19 @@ export const SubHeading = styled.p({
   marginBottom: '48px',
 });
 
-export const StackList = styled(flexibleRowDiv)({
-  justifyContent: 'center',
-});
-
-export const Item = styled.img({
-  width: '60px',
-  height: '60px',
-  margin: '0 6px 0 6px',
-});
+export const StackList = styled(flexibleRowDiv)`
+  @media (max-width: 1023px) {
+    display: inline;
+    text-align: center;
+  }
+`;
+export const Item = styled.img`
+  width: 60px;
+  height: 60px;
+  margin: 0 6px 0 6px;
+  @media (max-width: 1023px) {
+    width: 30px;
+    height: 30px;
+    margin: 0 6px 0 6px;
+  }
+`;

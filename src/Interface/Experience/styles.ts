@@ -3,18 +3,25 @@ import { flexibleColDiv, flexibleRowDiv } from '../../Shared/styles';
 import { Bold, Regular } from '../../Shared/typography';
 import { LightBlue, BorderColor } from '../../Shared/colors';
 
-export const Container = styled(flexibleRowDiv)({
-  marginTop: '128px',
-});
+export const Container = styled(flexibleRowDiv)`
+  margin-top: 128px;
+  @media (max-width: 1023px) {
+    flex-direction: column;
+    margin: 24px;
+  }
+`;
 
 export const LeftSection = styled(flexibleColDiv)({
   marginTop: '22px',
   flex: 3,
 });
 
-export const Separator = styled(flexibleColDiv)({
-  width: '50px',
-});
+export const Separator = styled(flexibleColDiv)`
+  width: 50px;
+  @media (max-width: 1023px) {
+    height: 25px;
+  }
+`;
 
 export const RightSection = styled(flexibleColDiv)({
   marginTop: '22px',

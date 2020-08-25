@@ -8,8 +8,8 @@ export const Works: WorkProps[] = [
     description: ['~ Working ~'],
   },
   {
-    start: '',
-    post: 'Frontend Dev. at Ignitus',
-    description: ['Open Source Contribution', 'ReactJS'],
+    start: 'Always',
+    post: 'Open Source Contribution',
+    description: ['Ignitus Organisation, ReactJS'],
   },
 ];

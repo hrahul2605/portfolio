@@ -33,3 +33,15 @@ body {
   scrollbar-width: none;
   overflow-x: hidden;
 }
+
+@media (max-width: 1023px) {
+  .safeAreaView {
+    width: 100%;
+  }
+  .container {
+    padding: 0px 24px;
+  }
+  html {
+    font-size: 10px;
+  }
+}

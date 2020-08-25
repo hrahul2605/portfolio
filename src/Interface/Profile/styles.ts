@@ -11,46 +11,63 @@ export const Container = styled(flexibleColDiv)({
   justifyContent: 'center',
 });
 
-export const Section = styled(flexibleRowDiv)({
-  width: '100%',
-  justifyContent: 'space-between',
-});
-
+export const Section = styled(flexibleRowDiv)`
+  width: 100%;
+  justify-content: space-between;
+  @media (max-width: 1023px) {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+`;
 export const LeftSection = styled(flexibleColDiv)({
   padding: '42px 0px',
   flex: 3,
   justifyContent: 'center',
 });
 
-export const Heading = styled.span({
-  fontWeight: Bold,
-  fontSize: '3rem',
-});
+export const Heading = styled.span`
+  font-weight: ${Bold};
+  font-size: 3rem;
+  @media (max-width: 1023px) {
+    text-align: center;
+  }
+`;
 
-export const Position = styled.span({
-  color: LightBlue,
-  fontWeight: Bold,
-  fontSize: '3rem',
-  paddingLeft: '12px',
-});
-
-export const Description = styled.div({
-  marginTop: '12px',
-  fontWeight: Regular,
-  fontSize: '1rem',
-});
+export const Position = styled.span`
+  color: ${LightBlue};
+  font-weight: ${Bold};
+  font-size: 3rem;
+  padding-left: 12px;
+  @media (max-width: 1023px) {
+    text-align: center;
+  }
+`;
+export const Description = styled.div`
+  margin-top: 12px;
+  font-weight: ${Regular};
+  font-size: 1rem;
+  @media (max-width: 1023px) {
+    text-align: center;
+  }
+`;
 
 export const RightSection = styled(flexibleColDiv)({
   alignItems: 'flex-end',
   flex: 2,
 });
 
-export const Photo = styled.img({
-  height: '450px',
-  objectFit: 'contain',
-  borderRadius: '70px',
-  boxShadow: '0px 1px 5px #000000',
-});
+export const Photo = styled.img`
+  height: 450px;
+  object-fit: contain;
+  border-radius: 70px;
+  box-shadow: 2px 2px 2px #000000;
+  @media (max-width: 1023px) {
+    height: 250px;
+    width: 250px;
+    border-radius: 250px;
+    object-fit: cover;
+  }
+`;
 
 export const Blob = styled(TopBlob)`
   top: -50%;
@@ -80,7 +97,7 @@ export const DownArrow = styled.a<{ visible: boolean }>`
   height: 24px;
   width: 24px;
   bottom: 0;
-  margin: 48px;
+  margin-bottom: 48px;
   align-self: center;
   display: flex;
   justify-content: center;
@@ -89,6 +106,9 @@ export const DownArrow = styled.a<{ visible: boolean }>`
   animation: ${bounce} 2s ease-in-out infinite;
   &:hover {
     cursor: pointer;
+  }
+  @media (max-width: 1023px) {
+    margin-bottom: 12px;
   }
 `;
 

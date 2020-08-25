@@ -10,7 +10,7 @@ export const Container = styled(flexibleRowDiv)({
 });
 
 export const LeftSection = styled(flexibleColDiv)({
-  flex: 2,
+  flex: 3,
 });
 
 export const Separator = styled(flexibleColDiv)({
@@ -18,7 +18,7 @@ export const Separator = styled(flexibleColDiv)({
 });
 
 export const RightSection = styled(flexibleColDiv)({
-  flex: 3,
+  flex: 2,
   marginRight: '48px',
 });
 
@@ -30,6 +30,7 @@ export const IntervalContainer = styled(flexibleRowDiv)({
 export const IntervalHeading = styled.p({
   fontWeight: SemiBold,
   fontSize: '0.875rem',
+  paddingLeft: '35px',
 });
 
 export const Title = styled.p({
@@ -45,5 +46,5 @@ export const Description = styled.p({
 export const Icon = styled(ActivityIcon)({
   fill: LightBlue,
   stroke: LightBlue,
-  paddingRight: '14px',
+  position: 'absolute',
 });
