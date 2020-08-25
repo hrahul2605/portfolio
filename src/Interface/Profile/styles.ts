@@ -103,7 +103,7 @@ export const DownArrow = styled.a<{ visible: boolean }>`
   justify-content: center;
   align-items: center;
   opacity: ${(props) => (props.visible ? 1 : 0)};
-  animation: ${bounce} 2s ease-in-out infinite;
+  animation: ${bounce} 2s ease-in-out 2;
   &:hover {
     cursor: pointer;
   }

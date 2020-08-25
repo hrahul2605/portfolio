@@ -31,7 +31,7 @@ export const Profile: React.FC = () => {
           </S.Description>
         </S.LeftSection>
         <S.RightSection>
-          <S.Photo src={require('../../../Shared/Assets/profile.jpg')} />
+          <S.Photo src={require('../../../Shared/Assets/profile.png')} />
         </S.RightSection>
       </S.Section>
       <S.DownArrow
