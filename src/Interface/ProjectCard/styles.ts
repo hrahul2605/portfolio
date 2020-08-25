@@ -12,6 +12,11 @@ export const Container = styled(flexibleColDiv)`
   overflow: hidden;
   box-shadow: 2px 2px 2px #000000;
   position: relative;
+  @media (max-width: 569px) {
+    width: 220px;
+    height: 200px;
+    margin: 0;
+  }
 `;
 
 export const Image = styled.img<{ hover: boolean }>`

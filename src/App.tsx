@@ -20,9 +20,9 @@ export const App: React.FC = () => {
           <TechStack />
           <Experience />
           <Projects />
-          <Footer />
         </div>
       </div>
+      <Footer />
     </React.Fragment>
   );
 };

@@ -1,7 +1,20 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import * as S from '../styles';
 
 export const Profile: React.FC = () => {
+  const [visible, setVisible] = useState(true);
+  useEffect(() => {
+    const onScroll = () => {
+      if (window.pageYOffset > 0) {
+        setVisible(false);
+      } else {
+        setVisible(true);
+      }
+    };
+    window.addEventListener('scroll', onScroll);
+    return () => window.removeEventListener('scroll', onScroll);
+  }, []);
+
   return (
     <S.Container>
       <S.Section>
@@ -18,9 +31,17 @@ export const Profile: React.FC = () => {
           </S.Description>
         </S.LeftSection>
         <S.RightSection>
-          <S.Photo src={require('../../../Shared/Assets/profile.jpg')} />
+          <S.Photo src={require('../../../Shared/Assets/profile.png')} />
         </S.RightSection>
       </S.Section>
+      <S.DownArrow
+        visible={visible}
+        onClick={() => {
+          window.scrollTo({ top: window.innerHeight });
+        }}
+      >
+        <S.Arrow />
+      </S.DownArrow>
     </S.Container>
   );
 };
