@@ -12,9 +12,9 @@ export const Footer: React.FC = () => {
       <S.Container>
         <S.Heading>Have Any Project in Mind?</S.Heading>
         <S.Heading>Drop me a message at</S.Heading>
-        <a href='mailto:hrahul2605@gmail.com'>
+        <S.EmailContainer href='mailto:hrahul2605@gmail.com'>
           <S.Email>hrahul2605@gmail.com</S.Email>
-        </a>
+        </S.EmailContainer>
         <S.ContactContainer>
           <S.Contact>
             <a href='https://github.com/hrahul2605'>

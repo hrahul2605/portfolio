@@ -7,6 +7,7 @@ export const ExperienceCard: React.FC<Props> = ({
   start,
   end,
   description,
+  url,
 }) => {
   return (
     <S.Container>
@@ -23,7 +24,9 @@ export const ExperienceCard: React.FC<Props> = ({
       <S.Separator />
       <S.RightSection>
         {description.map((desc, index) => (
-          <S.Description key={index}>{desc}</S.Description>
+          <a href={url !== undefined ? url[index] : '/'}>
+            <S.Description key={index}>{desc}</S.Description>
+          </a>
         ))}
       </S.RightSection>
     </S.Container>
