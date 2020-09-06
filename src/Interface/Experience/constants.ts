@@ -2,14 +2,16 @@ import { WorkProps } from './types';
 
 export const Works: WorkProps[] = [
   {
-    start: 'Sep 10, 2020',
+    start: 'Sep 7, 2020',
     end: 'Present',
-    post: 'Software Intern at Satisfic Pte. Ltd.',
+    post: 'Web dev. Intern at SKILLBEE',
     description: ['~ Working ~'],
+    url: ['https://www.skillbee.com'],
   },
   {
     start: 'Always',
     post: 'Open Source Contribution',
-    description: ['Ignitus Organisation, ReactJS'],
+    description: ['Ignitus Organisation'],
+    url: ['https://github.com/Ignitus/Ignitus-client'],
   },
 ];

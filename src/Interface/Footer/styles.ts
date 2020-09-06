@@ -16,11 +16,15 @@ export const Heading = styled.p({
   padding: '0px 48px',
 });
 
+export const EmailContainer = styled.a({
+  margin: 'auto',
+  marginTop: '48px',
+});
+
 export const Email = styled.p({
   fontWeight: Medium,
   fontSize: '1.125rem',
   textAlign: 'center',
-  marginTop: '48px',
 });
 
 export const Contact = styled(flexibleRowDiv)({
