@@ -7,7 +7,6 @@ export const Container = styled.a<{ image: boolean }>`
   display: flex;
   flex-direction: column;
   background-color: ${GreyShade};
-  margin: 0px 24px 24px 0px;
   height: 288px;
   max-width: ${(props) => (props.image ? "427px" : "300px")};
   width: ${(props) => (props.image ? "auto" : "300px")};

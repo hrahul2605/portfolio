@@ -19,7 +19,6 @@ export const Separator = styled(flexibleColDiv)({
 
 export const RightSection = styled(flexibleColDiv)({
   flex: 2,
-  marginRight: "48px",
 });
 
 export const IntervalContainer = styled(flexibleRowDiv)({

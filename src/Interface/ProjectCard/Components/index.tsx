@@ -10,17 +10,19 @@ export const ProjectCard: React.FC<Props> = ({
 }) => {
   const [hover, setHover] = useState(false);
   return (
-    <S.Container
-      href={url}
-      image={img ? true : false}
-      onMouseOver={() => setHover(true)}
-      onMouseLeave={() => setHover(false)}
-    >
-      {img && <S.Image hover={hover} src={img} />}
-      <S.Details hover={img ? hover : true}>
-        <S.Title>{name}</S.Title>
-        {description ? <S.Description>{description}</S.Description> : null}
-      </S.Details>
-    </S.Container>
+    <div style={{ margin: 12 }}>
+      <S.Container
+        href={url}
+        image={img ? true : false}
+        onMouseOver={() => setHover(true)}
+        onMouseLeave={() => setHover(false)}
+      >
+        {img && <S.Image hover={hover} src={img} />}
+        <S.Details hover={img ? hover : true}>
+          <S.Title>{name}</S.Title>
+          {description ? <S.Description>{description}</S.Description> : null}
+        </S.Details>
+      </S.Container>
+    </div>
   );
 };

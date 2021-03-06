@@ -22,4 +22,5 @@ export const RightSection = styled(flexibleRowDiv)({
   marginTop: "22px",
   flex: 7,
   flexWrap: "wrap",
+  justifyContent: "center",
 });
