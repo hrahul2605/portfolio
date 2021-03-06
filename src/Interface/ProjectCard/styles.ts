@@ -1,14 +1,17 @@
-import styled from '@emotion/styled';
-import { flexibleColDiv } from '../../Shared/styles';
-import { GreyShade } from '../../Shared/colors';
-import { ExtraBold, Medium } from '../../Shared/typography';
+import styled from "@emotion/styled";
+import { flexibleColDiv } from "../../Shared/styles";
+import { GreyShade } from "../../Shared/colors";
+import { ExtraBold, Medium } from "../../Shared/typography";
 
-export const Container = styled(flexibleColDiv)`
+export const Container = styled.a<{ image: boolean }>`
+  display: flex;
+  flex-direction: column;
   background-color: ${GreyShade};
+  margin: 0px 24px 24px 0px;
   height: 288px;
-  width: 427px;
+  max-width: ${(props) => (props.image ? "427px" : "300px")};
+  width: ${(props) => (props.image ? "auto" : "300px")};
   border-radius: 24px;
-  margin: 0 24px 24px 0;
   overflow: hidden;
   box-shadow: 2px 2px 2px #000000;
   position: relative;
@@ -21,7 +24,7 @@ export const Container = styled(flexibleColDiv)`
 
 export const Image = styled.img<{ hover: boolean }>`
   object-fit: cover;
-  transform: ${(props) => (props.hover ? 'scale(1.1)' : '0')};
+  transform: ${(props) => (props.hover ? "scale(1.1)" : "0")};
   transition: transform 300ms ease-in;
 `;
 
@@ -38,12 +41,12 @@ export const Details = styled(flexibleColDiv)<{ hover: boolean }>`
 
 export const Title = styled.p({
   fontWeight: ExtraBold,
-  fontSize: '3rem',
+  fontSize: "3rem",
 });
 
 export const Description = styled.p({
   fontWeight: Medium,
-  fontSize: '1rem',
-  textAlign: 'center',
-  padding: '12px',
+  fontSize: "1rem",
+  textAlign: "center",
+  padding: "12px",
 });
