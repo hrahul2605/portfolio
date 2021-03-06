@@ -1,14 +1,14 @@
-import styled from '@emotion/styled';
-import { keyframes } from '@emotion/core';
-import { flexibleRowDiv, flexibleColDiv } from '../../Shared/styles';
-import { Bold, Regular } from '../../Shared/typography';
-import { LightBlue } from '../../Shared/colors';
-import { TopBlob } from '../../Shared/Assets/TopBlob';
-import { DownArrowIcon } from '../../Shared/Assets/Icons/DownArrowIcon';
+import styled from "@emotion/styled";
+import { keyframes } from "@emotion/core";
+import { flexibleRowDiv, flexibleColDiv } from "../../Shared/styles";
+import { Bold, Regular } from "../../Shared/typography";
+import { LightBlue } from "../../Shared/colors";
+import { TopBlob } from "../../Shared/Assets/TopBlob";
+import { DownArrowIcon } from "../../Shared/Assets/Icons/DownArrowIcon";
 
 export const Container = styled(flexibleColDiv)({
-  height: '100vh',
-  justifyContent: 'center',
+  height: "100vh",
+  justifyContent: "center",
 });
 
 export const Section = styled(flexibleRowDiv)`
@@ -20,9 +20,9 @@ export const Section = styled(flexibleRowDiv)`
   }
 `;
 export const LeftSection = styled(flexibleColDiv)({
-  padding: '42px 0px',
+  padding: "42px 0px",
   flex: 3,
-  justifyContent: 'center',
+  justifyContent: "center",
 });
 
 export const Heading = styled.span`
@@ -52,21 +52,14 @@ export const Description = styled.div`
 `;
 
 export const RightSection = styled(flexibleColDiv)({
-  alignItems: 'flex-end',
+  alignItems: "center",
   flex: 2,
+  justifyContent: "center",
 });
 
 export const Photo = styled.img`
-  height: 450px;
-  object-fit: contain;
-  border-radius: 70px;
+  border-radius: 100%;
   box-shadow: 2px 2px 2px #000000;
-  @media (max-width: 1023px) {
-    height: 250px;
-    width: 250px;
-    border-radius: 250px;
-    object-fit: cover;
-  }
 `;
 
 export const Blob = styled(TopBlob)`
