@@ -60,6 +60,7 @@ export const RightSection = styled(flexibleColDiv)({
 export const Photo = styled.img`
   border-radius: 100%;
   box-shadow: 2px 2px 2px #000000;
+  max-height: 250px;
 `;
 
 export const Blob = styled(TopBlob)`
