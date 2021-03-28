@@ -8,6 +8,11 @@ export const ProjectData: Props[] = [
     description: "A simple all-in-one todo list app for tasks and projects.",
   },
   {
+    name:'Just Vote',
+    url:'https://github.com/hrahul2605/jv-client',
+    description:'Just Vote - A Simple Voting Solution'
+  },
+  {
     name: "CMCK",
     url: "https://www.github.com/hrahul2605/cmck",
     description:
