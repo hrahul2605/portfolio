@@ -1,11 +1,14 @@
-import * as React from "react"
-import PropTypes from "prop-types"
-import { Link } from "gatsby"
+import React, { FC } from 'react'
+import { Link } from 'gatsby'
 
-const Header = ({ siteTitle }) => (
+interface IHeaderProps {
+  siteTitle: string
+}
+
+const Header: FC<IHeaderProps> = ({ siteTitle }) => (
   <header
+    className='bg-red'
     style={{
-      background: `rebeccapurple`,
       marginBottom: `1.45rem`,
     }}
   >
@@ -30,10 +33,6 @@ const Header = ({ siteTitle }) => (
     </div>
   </header>
 )
-
-Header.propTypes = {
-  siteTitle: PropTypes.string,
-}
 
 Header.defaultProps = {
   siteTitle: ``,
