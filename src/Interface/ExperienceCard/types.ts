@@ -4,4 +4,6 @@ export type Props = {
   end?: string;
   description: string[];
   url?: string[];
+  org: string;
+  icon: string;
 };

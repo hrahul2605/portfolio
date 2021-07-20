@@ -1,24 +1,11 @@
 import styled from "@emotion/styled";
 import { flexibleRowDiv, flexibleColDiv } from "../../Shared/styles";
-import { SemiBold, ExtraBold, Regular } from "../../Shared/typography";
+import { SemiBold, ExtraBold, Regular, Medium } from "../../Shared/typography";
 import { LightBlue } from "../../Shared/colors";
 import { ActivityIcon } from "../../Shared/Assets/Icons/ActivityIcon";
 
-export const Container = styled(flexibleRowDiv)({
-  justifyContent: "space-between",
+export const Container = styled(flexibleColDiv)({
   width: "100%",
-});
-
-export const LeftSection = styled(flexibleColDiv)({
-  flex: 3,
-});
-
-export const Separator = styled(flexibleColDiv)({
-  width: "48px",
-});
-
-export const RightSection = styled(flexibleColDiv)({
-  flex: 2,
 });
 
 export const IntervalContainer = styled(flexibleRowDiv)({
@@ -34,17 +21,33 @@ export const IntervalHeading = styled.p({
 
 export const Title = styled.p({
   fontWeight: ExtraBold,
+  fontSize: "1rem",
+  marginBottom: "0.25rem",
+});
+
+export const SubTitle = styled.p({
+  fontWeight: Medium,
   fontSize: "1.125rem",
 });
 
 export const Description = styled.p({
   fontWeight: Regular,
   fontSize: "1rem",
-  marginBottom: "0.75rem",
+  marginBottom: "0.5rem",
 });
 
 export const Icon = styled(ActivityIcon)({
   fill: LightBlue,
   stroke: LightBlue,
   position: "absolute",
+});
+
+export const Image = styled.img({
+  height: "3.5rem",
+  marginRight: '1rem'
+});
+
+export const Row = styled(flexibleRowDiv)({
+  alignItems: "center",
+  marginBottom: "1rem",
 });

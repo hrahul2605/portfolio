@@ -1,6 +1,6 @@
-import React from 'react';
-import { Props } from '../types';
-import * as S from '../styles';
+import React from "react";
+import { Props } from "../types";
+import * as S from "../styles";
 
 export const ExperienceCard: React.FC<Props> = ({
   post,
@@ -8,27 +8,29 @@ export const ExperienceCard: React.FC<Props> = ({
   end,
   description,
   url,
+  org,
+  icon,
 }) => {
   return (
     <S.Container>
-      <S.LeftSection>
-        <S.IntervalContainer>
-          <S.Icon />
-          <S.IntervalHeading>
-            {start}
-            {end ? ` ~ ${end}` : null}
-          </S.IntervalHeading>
-        </S.IntervalContainer>
-        <S.Title>{post}</S.Title>
-      </S.LeftSection>
-      <S.Separator />
-      <S.RightSection>
-        {description.map((desc, index) => (
-          <a href={url !== undefined ? url[index] : '/'}>
-            <S.Description key={index}>{desc}</S.Description>
-          </a>
-        ))}
-      </S.RightSection>
+      <S.IntervalContainer>
+        <S.Icon />
+        <S.IntervalHeading>
+          {start}
+          {end ? ` ~ ${end}` : null}
+        </S.IntervalHeading>
+      </S.IntervalContainer>
+      <S.Row>
+        <S.Image src={icon} />
+        <a href={url !== undefined ? url[0] : "/"}>
+          <S.Title>{post}</S.Title>
+          <S.SubTitle>{org}</S.SubTitle>
+        </a>
+      </S.Row>
+
+      {description.map((desc, index) => (
+        <S.Description key={index}>{desc}</S.Description>
+      ))}
     </S.Container>
   );
 };
