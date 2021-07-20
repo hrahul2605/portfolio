@@ -7,22 +7,24 @@ export const Container = styled.a<{ image: boolean }>`
   display: flex;
   flex-direction: column;
   background-color: ${GreyShade};
-  height: 288px;
-  max-width: ${(props) => (props.image ? "427px" : "300px")};
-  width: ${(props) => (props.image ? "auto" : "300px")};
+  height: 250px;
+  max-width: 350px;
+  align-items: center;
+  justify-content: center;
+  width: ${(props) => (props.image ? "auto" : "270px")};
   border-radius: 24px;
   overflow: hidden;
   box-shadow: 2px 2px 2px #000000;
   position: relative;
   @media (max-width: 569px) {
-    width: 220px;
+    width: 216px;
     height: 200px;
     margin: 0;
   }
 `;
 
 export const Image = styled.img<{ hover: boolean }>`
-  object-fit: cover;
+  object-fit: stretch;
   transform: ${(props) => (props.hover ? "scale(1.1)" : "0")};
   transition: transform 300ms ease-in;
 `;
