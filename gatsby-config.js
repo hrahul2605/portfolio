@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `Portfolio`,
-    description: `Rahul Halder`,
+    title: `Rahul Halder`,
+    description: `Portfolio`,
     author: `@hrahul2605`,
   },
   plugins: [
@@ -25,7 +25,7 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/portfolio-icon.png`, // This path is relative to the root of the site.
       },
     },
     `gatsby-plugin-postcss`,
