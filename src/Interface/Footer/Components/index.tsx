@@ -2,6 +2,7 @@ import React from 'react';
 import * as S from '../styles';
 import { GithubIcon } from '../../../Shared/Assets/Icons/GithubIcon';
 import { LinkedinIcon } from '../../../Shared/Assets/Icons/LinkedinIcon';
+import { TwitterIcon } from '../../../Shared/Assets/Icons/TwitterIcon';
 
 export const Footer: React.FC = () => {
   return (
@@ -17,12 +18,15 @@ export const Footer: React.FC = () => {
         </S.EmailContainer>
         <S.ContactContainer>
           <S.Contact>
-            <a href='https://github.com/hrahul2605'>
+            <S.Icon href='https://github.com/hrahul2605'>
               <GithubIcon />
-            </a>
-            <a href='https://linkedin.com/in/hrahul2605'>
+            </S.Icon>
+            <S.Icon href='https://linkedin.com/in/hrahul2605'>
               <LinkedinIcon />
-            </a>
+            </S.Icon>
+            <S.Icon style={{alignItems:'center', display: 'flex'}} href='https://twitter.com/hrahul2605'>
+              <TwitterIcon />
+            </S.Icon>
           </S.Contact>
         </S.ContactContainer>
         <S.BlobContainer>

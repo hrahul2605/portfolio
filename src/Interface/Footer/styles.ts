@@ -28,10 +28,13 @@ export const Email = styled.p({
 });
 
 export const Contact = styled(flexibleRowDiv)({
-  width: '74px',
   marginTop: '24px',
-  justifyContent: 'space-between',
+  alignItems: 'center'
 });
+
+export const Icon = styled.a({
+  margin: '0 10px',
+})
 
 export const ContactContainer = styled(flexibleRowDiv)({
   width: '100%',
