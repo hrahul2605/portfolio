@@ -1,6 +1,6 @@
 import styled from "@emotion/styled";
 import { flexibleRowDiv, flexibleColDiv } from "../../Shared/styles";
-import { SemiBold, ExtraBold, Regular, Medium } from "../../Shared/typography";
+import { SemiBold, ExtraBold, Medium, Light } from "../../Shared/typography";
 import { LightBlue } from "../../Shared/colors";
 import { ActivityIcon } from "../../Shared/Assets/Icons/ActivityIcon";
 
@@ -31,7 +31,7 @@ export const SubTitle = styled.p({
 });
 
 export const Description = styled.p({
-  fontWeight: Regular,
+  fontWeight: Light,
   fontSize: "1rem",
   marginBottom: "0.5rem",
 });
@@ -44,7 +44,7 @@ export const Icon = styled(ActivityIcon)({
 
 export const Image = styled.img({
   height: "3.5rem",
-  marginRight: '1rem'
+  marginRight: "1rem",
 });
 
 export const Row = styled(flexibleRowDiv)({

@@ -1,7 +1,7 @@
 import styled from "@emotion/styled";
 import { flexibleColDiv } from "../../Shared/styles";
 import { GreyShade } from "../../Shared/colors";
-import { ExtraBold, Medium } from "../../Shared/typography";
+import { ExtraBold, Regular } from "../../Shared/typography";
 
 export const Container = styled.a<{ image: boolean }>`
   display: flex;
@@ -46,7 +46,7 @@ export const Title = styled.p({
 });
 
 export const Description = styled.p({
-  fontWeight: Medium,
+  fontWeight: Regular,
   fontSize: "1rem",
   textAlign: "center",
   padding: "12px",

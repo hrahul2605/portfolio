@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import * as S from '../styles';
+import React, { useState, useEffect } from "react";
+import * as S from "../styles";
 
 export const Profile: React.FC = () => {
   const [visible, setVisible] = useState(true);
@@ -11,8 +11,8 @@ export const Profile: React.FC = () => {
         setVisible(true);
       }
     };
-    window.addEventListener('scroll', onScroll);
-    return () => window.removeEventListener('scroll', onScroll);
+    window.addEventListener("scroll", onScroll);
+    return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
   return (
@@ -20,19 +20,10 @@ export const Profile: React.FC = () => {
       <S.Section>
         <S.LeftSection>
           <S.Heading>
-            Heyy, I'm Rahul!
-            <br />a<S.Position>Full stack developer</S.Position>
+            Hey, <S.Position>I'm Rahul!</S.Position>
           </S.Heading>
-          <S.Description>
-            Always interested in learning and experimenting with new
-            <br />
-            technologies. Looking for oppurtunities to grow as a<br />
-            developer and improve my skills.
-          </S.Description>
+          <S.Description>i watch anime</S.Description>
         </S.LeftSection>
-        <S.RightSection>
-          <S.Photo src={require('../../../Shared/Assets/profile.png')} />
-        </S.RightSection>
       </S.Section>
       <S.DownArrow
         visible={visible}

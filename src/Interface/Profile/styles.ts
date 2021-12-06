@@ -7,8 +7,8 @@ import { TopBlob } from "../../Shared/Assets/TopBlob";
 import { DownArrowIcon } from "../../Shared/Assets/Icons/DownArrowIcon";
 
 export const Container = styled(flexibleColDiv)({
-  height: "100vh",
   justifyContent: "center",
+  marginTop: "124px",
 });
 
 export const Section = styled(flexibleRowDiv)`
