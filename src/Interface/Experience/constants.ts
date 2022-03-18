@@ -2,12 +2,23 @@ import { WorkProps } from "./types";
 
 export const Works: WorkProps[] = [
   {
+    start: "March, 2021",
+    post: "Software Engineer Intern",
+    org: "Headout",
+    description: [
+      "Building the Headout cross platform app"
+    ],
+    url: ["https://www.headout.com/"],
+    icon: "https://raw.githubusercontent.com/hrahul2605/portfolio/master/src/Shared/Assets/headout.png"
+  },
+  {
     start: "September, 2021",
     end: "January, 2021",
     post: "Software Development Intern",
     org: "Trell",
     description: [
-      "Working with e-commerce team, developing modules and services using php, magento, graphql",
+      "Worked with e-commerce team developing modules/services using php & magento.",
+      "Developed modules decreasing response time drastically around 80% for searching catalog products, using Elasticsearch and Kibana."
     ],
     url: ["https://shop.trell.co/"],
     icon: "https://cdn.trell.co/images/orig/hwiuhdmr53tyjNkskQjFzXKk0vPePa3T.svg",
